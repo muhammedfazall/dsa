@@ -99,18 +99,18 @@ func (dlist *DlinkedList) DeletebyValuee(data int) {
 
 }
 
-func main() {
-	dlist := DlinkedList{}
+// func main() {
+// 	dlist := DlinkedList{}
 
-	dlist.AddToFronttt(40)
-	dlist.AddToFronttt(20)
-	dlist.Ddisplay()
-	dlist.AddToEnddd(70)
-	dlist.AddToEnddd(66)
-	dlist.AddToEnddd(42)
-	dlist.Ddisplay()
-	dlist.DeletebyValuee(20)
-	dlist.Ddisplay()
-	dlist.DisplayReverse()
+// 	dlist.AddToFronttt(40)
+// 	dlist.AddToFronttt(20)
+// 	dlist.Ddisplay()
+// 	dlist.AddToEnddd(70)
+// 	dlist.AddToEnddd(66)
+// 	dlist.AddToEnddd(42)
+// 	dlist.Ddisplay()
+// 	dlist.DeletebyValuee(20)
+// 	dlist.Ddisplay()
+// 	dlist.DisplayReverse()
 
-}
+// }
