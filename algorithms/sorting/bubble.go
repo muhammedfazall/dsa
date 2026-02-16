@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 )
 
 // 'while' style
@@ -52,12 +52,3 @@ func BubbleSort(a []int) {
 // 		}
 // 	}
 // }
-
-func main() {
-
-	a := []int{4, 7, 1, 0, 8, 2, 6, 3}
-
-	BubbleSort(a)
-
-	fmt.Println(a)
-}
