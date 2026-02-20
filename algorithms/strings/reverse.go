@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func Reverse(s string) string {
 	r := []rune(s)
 
@@ -11,7 +9,7 @@ func Reverse(s string) string {
 	return string(r)
 }
 
-func main() {
-	s := "fazallll"
-	fmt.Println(Reverse(s))
-}
+// func main() {
+// 	s := "fazallll"
+// 	fmt.Println(Reverse(s))
+// }
