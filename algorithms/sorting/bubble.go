@@ -1,10 +1,6 @@
 package main
 
-import (
-	// "fmt"
-)
-
-// 'while' style
+// // 'while' style
 
 func BubbleSort(a []int) {
 	n := len(a)
@@ -21,6 +17,15 @@ func BubbleSort(a []int) {
 		n--
 	}
 }
+
+// func main() {
+
+// 	a := []int{4, 7, 1, 0, 8, 2, 6, 3}
+
+// 	BubbleSort(a)
+
+// 	fmt.Println(a)
+// }
 
 // using range (idiomatic)
 
