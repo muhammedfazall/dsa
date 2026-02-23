@@ -4,7 +4,7 @@ import "fmt"
 
 // import "fmt"
 
-// func SelectionSort(a []int) {
+// func BubbleSort(a []int) {
 // 	n := len(a)
 // 	swapped := true
 
@@ -17,7 +17,7 @@ import "fmt"
 // 				swapped = true
 // 			}
 // 		}
-
+//      n--
 // 	}
 // }
 
@@ -35,15 +35,18 @@ import "fmt"
 
 // 		a[j+1] = temp
 // 	}
-// 	n--
 // }
 
-// func BubbleSort(a []int)  {
+// func SelectionSort(a []int) {
 // 	n := len(a)
-// 	for i:=0 ; i < n-1 ; i++{
-// 		for j:=0 ; j < n-1-i ; j++{
-// 			if a[j] > a[j+1] {
-// 				a[j],a[j+1] = a[j+1],a[j]
+// 	for i := 0; i < n-1; i++ {
+// 		min := i
+// 		for j := i + 1; j < n; j++ {
+// 			if a[j] < a[min] {
+// 				min = j
+// 			}
+// 			if min != i {
+// 				a[j], a[min] = a[min], a[i]
 // 			}
 // 		}
 // 	}
@@ -120,7 +123,6 @@ func main() {
 	bst = Insert(bst, 50)
 	bst = Insert(bst, 100)
 	bst = Insert(bst, 40)
-
 
 	Inorder(bst)
 	fmt.Println()
