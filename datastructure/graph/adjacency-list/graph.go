@@ -42,27 +42,39 @@ func (g *Graph) AddVertex(v int){
 
 
 func main()  {
-	g:= NewGraph(false)
+	//directed
+	g:= NewGraph(true)
 
 	g.AddEdge(0,1)
 	g.AddEdge(0,2)
 	g.AddEdge(1,2)
-	g.AddEdge(2,3)
-	g.adjList[5] = []int{}
-	
+	// g.AddEdge(2,3)
+	// g.AddEdge(3,0)
+	// g.adjList[5] = []int{}
+	// g.AddVertex(10)
+
 	g.Print()
 	
-	fmt.Println("-----------------")
-	dg:= NewGraph(true)
+	g.DFS(0)
+	fmt.Println()
+	g.BFS(0)
+	// fmt.Println()
+	// g.DFS(3)
+	
+	fmt.Println("\n-----------------")
+	
+	// undirected
+	dg:= NewGraph(false)
 	
 	dg.AddEdge(0,1)
 	dg.AddEdge(0,2)
 	dg.AddEdge(1,2)
-	dg.AddEdge(2,3)
-	dg.adjList[2] = append(dg.adjList[2], 5)
-
-	dg.AddVertex(10)
-
-
+	// dg.AddEdge(2,3)
+	// dg.adjList[2] = append(dg.adjList[2], 5)
+	// dg.AddVertex(10)
 	dg.Print()
+	
+	dg.BFS(0)
+	fmt.Println()
+	dg.DFS(0)
 }
