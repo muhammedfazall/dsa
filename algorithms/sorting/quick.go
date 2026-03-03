@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func partition(arr []int, low, high int) int {
 	pivot := arr[high]
 	i := low - 1
@@ -27,10 +25,10 @@ func QuickSort(arr []int, low, high int) {
 	}
 }
 
-func main() {
-	arr := []int{8, 3, 1, 7, 0, 10, 2}
+// func main() {
+// 	arr := []int{8, 3, 1, 7, 0, 10, 2}
 
-	QuickSort(arr, 0, len(arr)-1)
+// 	QuickSort(arr, 0, len(arr)-1)
 
-	fmt.Println(arr)
-}
+// 	fmt.Println(arr)
+// }
